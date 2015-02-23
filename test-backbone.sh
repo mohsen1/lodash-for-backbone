@@ -27,3 +27,6 @@ npm test
 
 echo 'cd ..'
 cd ..
+
+echo 'check size'
+node ./check-size.js
