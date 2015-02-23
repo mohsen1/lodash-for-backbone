@@ -11,7 +11,6 @@ var _ = {
   bindAll: require('lodash/function/bindAll'),
 
   uniqueId: require('lodash/utility/uniqueId'),
-  matches: require('lodash/utility/matches'),
 
   invoke: require('lodash/collection/invoke'),
   each: require('lodash/collection/forEach'),
@@ -19,7 +18,6 @@ var _ = {
   any: require('lodash/collection/some'),
 
   escape: require('lodash/string/escape'),
-
 
   clone: require('lodash/lang/clone'),
   isEmpty: require('lodash/lang/isEmpty'),
