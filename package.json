@@ -1,0 +1,19 @@
+{
+  "name": "lodash-for-backbone",
+  "version": "1.0.0",
+  "description": "Exploring of possibility of using lodash for backbone to reach smaller size dependency ",
+  "main": "index.js",
+  "dependencies": {
+    "lodash": "^3.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./node_modules/browserify/bin/cmd.js index.js > browser.js; ./node_modules/uglify/bin/uglify -s browser.js -o browser.min.js"
+  },
+  "keywords": [
+    "lodash"
+  ],
+  "author": "Mohsen Azimi <me@azimi.me>",
+  "license": "MIT"
+}
