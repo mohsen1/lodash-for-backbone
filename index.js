@@ -1,7 +1,7 @@
 var _ = {
   keys: require('lodash/object/keys'),
   result: require('lodash/object/result'),
-  extend: require('lodash/object/extend'),
+  extend: require('lodash/object/assign'),
   defaults: require('lodash/object/defaults'),
   has: require('lodash/object/has'),
   pick: require('lodash/object/pick'),
@@ -14,9 +14,9 @@ var _ = {
   matches: require('lodash/utility/matches'),
 
   invoke: require('lodash/collection/invoke'),
-  each: require('lodash/collection/each'),
+  each: require('lodash/collection/forEach'),
   map: require('lodash/collection/map'),
-  any: require('lodash/collection/any'),
+  any: require('lodash/collection/some'),
 
   escape: require('lodash/string/escape'),
 
