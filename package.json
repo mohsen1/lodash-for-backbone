@@ -5,13 +5,14 @@
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
+    "backbone": "^1.1.2",
     "browserify": "^9.0.3",
     "bundle-collapser": "^1.1.4",
     "lodash": "^3.3.0",
     "uglify-js": "^2.4.16"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "./test-backbone.sh",
     "build": "./node_modules/browserify/bin/cmd.js -p bundle-collapser/plugin index.js > browser.js; ./node_modules/uglify-js/bin/uglifyjs browser.js -m -c 'comparisons=false,keep_fargs=true,unsafe=true,unsafe_comps=true,warnings=false' -b 'ascii_only=true,beautify=false'  > browser.min.js"
   },
   "keywords": [
