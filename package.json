@@ -11,7 +11,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "./node_modules/browserify/bin/cmd.js -p bundle-collapser/plugin index.js > browser.js; ./node_modules/uglify/bin/uglify -s browser.js -o browser.min.js"
+    "build": "./node_modules/browserify/bin/cmd.js -p bundle-collapser/plugin index.js > browser.js; ./node_modules/uglify/bin/uglify -s browser.js -m -c 'comparisons=false,keep_fargs=true,unsafe=true,unsafe_comps=true,warnings=false' -b 'ascii_only=true,beautify=false' -o browser.min.js"
   },
   "keywords": [
     "lodash"
