@@ -1,7 +1,7 @@
 {
   "name": "lodash-for-backbone",
   "version": "1.0.0",
-  "description": "Exploring of possibility of using lodash for backbone to reach smaller size dependency ",
+  "description": "A cherry-picked collection of lodash methods that is required for backbone.",
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
