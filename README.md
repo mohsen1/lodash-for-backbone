@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/mohsen1/lodash-for-backbone.svg?branch=master)](https://travis-ci.org/mohsen1/lodash-for-backbone)
 
-A failed attemp to make a cherry-picked collection of [`lodash`](https://www.npmjs.com/package/lodash) methods that is required for backbone to reach an smaller size dependency file.
+A failed attempt to make a cherry-picked collection of [`lodash`](https://www.npmjs.com/package/lodash) methods that is required for backbone to reach a smaller size dependency file.
 
 
 ### Build
