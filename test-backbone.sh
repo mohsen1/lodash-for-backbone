@@ -1,4 +1,6 @@
 #! /bin/sh
+echo 'git submodule update --recursive'
+git submodule update --recursive
 
 echo 'cd backbone'
 cd backbone
