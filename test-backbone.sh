@@ -1,15 +1,27 @@
 #! /bin/sh
 
-echo 'npm install node_modules/backbone'
-npm install node_modules/backbone
+echo 'cd backbone'
+cd backbone
 
-echo 'cp ./browser.js node_modules/backbone/node_modules/underscore/underscore.js'
-cp ./browser.js node_modules/backbone/node_modules/underscore/underscore.js
+echo 'npm install'
+npm install
 
-echo 'cp ./browser.min.js node_modules/backbone/node_modules/underscore/underscore-min.js'
-cp ./browser.min.js node_modules/backbone/node_modules/underscore/underscore-min.js
+echo 'cp ./browser.js backbone/node_modules/underscore/underscore.js'
+cp ./browser.js backbone/node_modules/underscore/underscore.js
+
+echo 'cp ./browser.min.js backbone/node_modules/underscore/underscore-min.js'
+cp ./browser.min.js backbone/node_modules/underscore/underscore-min.js
 
 
-echo 'npm test node_modules/backbone'
-cd node_modules/backbone
+echo 'checking out latest tag'
+git pull origin master
+git fetch --tags
+latestTag=$(git describe --tags `git rev-list --tags --max-count=1`)
+git checkout $latestTag
+
+
+echo 'npm test'
 npm test
+
+echo 'cd ..'
+cd ..
