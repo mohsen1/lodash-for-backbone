@@ -13,9 +13,9 @@ var _ = {
   uniqueId: require('lodash/utility/uniqueId'),
 
   invoke: require('lodash/collection/invoke'),
-  each: require('lodash/collection/forEach'),
-  map: require('lodash/collection/map'),
-  any: require('lodash/collection/some'),
+  each: require('lodash/internal/arrayEach'),
+  map: require('lodash/internal/arrayMap'),
+  any: require('lodash/internal/arraySome'),
 
   escape: require('lodash/string/escape'),
 

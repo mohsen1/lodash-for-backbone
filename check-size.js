@@ -8,8 +8,9 @@ fs.readFile('./browser.min.js', function (err, fileStream) {
     return console.error(err);
   }
 
-  if(gzipSize.sync(fileStream.toString()) >= 5300) {
-    console.log('Size is larger that underscore itself');
+  var size = gzipSize.sync(fileStream.toString());
+  if(size >= 5300) {
+    console.log('Size is larger that underscore itself. Size: ' + size);
     process.exit(1);
   }
 })
