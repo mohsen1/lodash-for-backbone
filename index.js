@@ -13,6 +13,7 @@ var _ = {
   any: require('lodash/internal/arraySome'),
   escape: require('lodash/string/escape'),
   isEmpty: require('lodash/lang/isEmpty'),
+  isEqual: require('lodash/lang/isEqual'),
   isObject: require('lodash/lang/isObject'),
   isArray: require('lodash/lang/isArray'),
   isString: require('lodash/lang/isString'),
