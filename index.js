@@ -42,3 +42,6 @@ _.clone = function(object) {
   }
   return _.isArray(object) ? object.slice() : _.extend({}, object);
 };
+
+
+module.exports = _;

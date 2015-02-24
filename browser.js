@@ -44,6 +44,8 @@ _.clone = function(object) {
   return _.isArray(object) ? object.slice() : _.extend({}, object);
 };
 
+
+module.exports = _;
 },{"2":2,"25":25,"36":36,"37":37,"38":38,"4":4,"40":40,"41":41,"42":42,"43":43,"44":44,"45":45,"46":46,"48":48,"49":49,"50":50,"54":54,"6":6,"7":7,"8":8}],2:[function(require,module,exports){
 var baseInvoke = require(18),
     baseSlice = require(20);
