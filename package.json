@@ -9,6 +9,7 @@
     "bundle-collapser": "^1.1.4",
     "gzip-size": "^1.0.0",
     "lodash": "^3.3.0",
+    "pretty-bytes": "^1.0.3",
     "uglify-js": "^2.4.16"
   },
   "scripts": {
